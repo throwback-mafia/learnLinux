@@ -1,0 +1,89 @@
+Differences between staging area and ODS
+
+	Ods-> recent files  staging area :dwh{recent data}
+-	Operational Data Store which contains data .
+           ods comes after the staging area
+ Staging area It comes after the etl has finished.Staging layer is used for cleansing purpose and store the data periodically. 
+Staging Area consists of Meta Data,The  work area where we apply our complex business rules,Hold the data and do calculations.
+
+
+1.Use man command to find out the resources to change the hostname of my
+computer \\ hostname jithin
+2.Find out which version of kernel using (man command) 
+uname –r
+3.How the file is being saved in Linux without mentioning the file format
+touch newFile
+4.Copy the files create three folder in a particular location as /tmp/data/bolly /tmp/data/holly /tmp/data/tolly [only 1 command]
+ -> go at /etc and copy all the files you have starting with name a,b,c or d ,
+take that data to the /tmp/data location
+
+mkdir /tmp/data/bolly /tmp/data/holly /tmp/data/tolly
+cd /etc 
+cp [abcd] /../tmp/data
+5.Take the above files, if the file name starts with a or b take to bolly
+cd /tmp/data
+cp [ab] bolly
+6.c or d -> holly
+cp [cd] holly
+7.Take those file which are bigger in amount in size( file > 40M) -> tolly
+8.You can create the tar file of each folder {bolly, holly, tolly} in adesktop folder named as "MoviesData" & make sure the tar files are
+present with its respective names
+cd /Desktop
+mkdir MoviesData
+cd MoviesData
+tar -cf bolly.tar /tmp/data/bolly
+tar -cf holly.tar /tmp/data/holly
+tar -cf tolly.tar /tmp/data/tolly
+
+9.Create 4 users with names tushar, nana, jaya and maulik
+sudo useradd tushar
+sudo useradd nana
+sudo useradd jaya
+sudo useradd maulik
+
+
+10.Set expiry of password to 90 days
+sudo chage -m 90 tushar 
+11. Create group marketing add tushar , nana
+sudo groupadd marketing
+sudo useradd -gmarketing tushar
+sudo useradd -gmarketing nana
+12. Create group it add jaya, maulik
+sudo groupadd it
+sudo useradd -git jaya
+sudo useradd -git maulik
+13.  Create group as capgemini and add all users as secondary group to it.
+groupadd capgemini 
+14.  try the input direction to set the password for all the user
+-> make sure every user gets the home directory
+
+Add a new user with any name and the user id for this one should be 2001
+
+15. Also set the shell for that user to {sh shell}
+
+16. add this user into the existing group named capgemini and give its comment
+while creating user as "Capgemini employee for Big Data"
+
+17- You need to set the umask value to 022 & it should be permanent
+ -> Try to see the files & folder created after checking the umask
+
+18. -> Again change the umask value to the default value
+
+19. -> You need create files by root & see that other user & group can't access
+them
+ -> Files created by other user can be accessed by the group owners
+
+20.Create a directory on the desktop with the name as CapgeminiFolder
+ - make sure the members of the group i.e "BigDataEmplyee" should be able to
+access the data inside the drectory
+ - and other users can't access it
+ - Make sure one thing one user can't access or write the file of other user
+present in the above shared directory
+ - But make sure, the user {manager} he should be able to access all the data
+& can remove the files
+
+
+21) sort the array, input (number ) will be given by user
+22) Take array size, element from user & take that array that need to be search &
+find the index position where the array is present.
+
